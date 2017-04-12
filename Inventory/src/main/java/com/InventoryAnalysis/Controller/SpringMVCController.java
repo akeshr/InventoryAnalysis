@@ -36,7 +36,6 @@ public class SpringMVCController {
 	
 	@RequestMapping(value = "/PostFormData", method = RequestMethod.GET)
 	public List<Student> getStudent(){
-		System.out.println("i m here");
 	List<Student> students = inventoryAnalysisDAO.listStudents();
 		
 		return students;
