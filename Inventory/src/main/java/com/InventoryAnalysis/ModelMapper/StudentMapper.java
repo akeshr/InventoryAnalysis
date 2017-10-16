@@ -13,7 +13,6 @@ public class StudentMapper implements RowMapper<Student> {
       student.setName(rs.getString("name"));
       student.setAge(rs.getInt("age")); 
       
-	  
       return student;
    }
 }
