@@ -40,7 +40,6 @@ import com.InventoryAnalysis.ModelMapper.StudentMapper;
 	      System.out.println("Deleted Record with ID = " + id );
 	      return;
 	   }
-	   
 	   public void update(Integer id, Integer age){
 	      String SQL = "update Student set age = ? where id = ?";
 	      jdbcTemplateObject.update(SQL, age, id);
